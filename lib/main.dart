@@ -32,6 +32,7 @@ void onclick() {
   /// Get a list of all available Ports
   /// Select the one for your device.
   /// Here we will just take the first one, that has "usbserial" in its name, to keep things simple.
+  /// As a fallback we use the first available port (since windows has different names)
   List<String>? availablePorts = SerialPort.availablePorts;
   final serialPath = availablePorts.firstWhere(
     (element) => element.contains('usbserial'),

@@ -24,8 +24,17 @@ update the message send to the device as the expected message format differs fro
 `https://github.com/jpnurmi/flutter_libserialport/issues/30`
 
 Output for the main.dart on MacOS
-````
+```
 flutter: /dev/cu.usbserial-AE01I87G opened!
+flutter: message send [48, 48, 49, 48, 48, 48, 49, 48, 48, 50, 61, 63, 48, 57, 54, 13]
+flutter: message received [48, 48, 49, 49, 48, 48, 49, 48, 48, 54, 48, 48, 48, 48, 48, 48, 48, 48, 57, 13]
+flutter: 0011001006000000009
+```
+
+### Windows
+Output for the main.dart on Windows
+```
+flutter: COM4 opened!
 flutter: message send [48, 48, 49, 48, 48, 48, 49, 48, 48, 50, 61, 63, 48, 57, 54, 13]
 flutter: message received [48, 48, 49, 49, 48, 48, 49, 48, 48, 54, 48, 48, 48, 48, 48, 48, 48, 48, 57, 13]
 flutter: 0011001006000000009
